@@ -61,10 +61,18 @@
 .main .itemsBox .item h1{
 	position: relative;
 	width: 100%;
-	text-align: center;
+	text-align:left;
 	font-size: 1.2rem;
 	font-weight: lighter;
 	padding: 10px 0;
+}
+
+.main .itemsBox .item h2{
+	position: relative;
+	width: 100%;
+	text-align:left;
+	font-size: 1rem;
+	font-weight: lighter;
 }
 .main .itemsBox .item p{
 	position: relative;

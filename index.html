@@ -1,72 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>E-Commernce Website</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/bfd0c0e402.js" crossorigin="anonymous"></script>
-    <script>
-		
-		function Delete(e){
-			let items = [];
-			JSON.parse(localStorage.getItem('items')).map(data=>{
-				if(data.id != e.parentElement.parentElement.children[0].textContent){
-					
-					items.push(data);
-
-				}
-			});
-			localStorage.setItem('items',JSON.stringify(items));
-			window.location.reload();
-		};
-	</script>
-  </head>
-  <body>
+</head>
+<body>
     
 <nav class="navbar"></nav>
-
-<div class="main">
-        <header id="header" class="header">
-                <div class="iconShopping">
-                        <p>0</p>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-        </header>
-        <div class="itemsBox">
-                <div class="item">
-                        <img src="img/OutkastVintage.png"/>
-                        <div class="itemInfo">
-                                <h1>Outkast Graphic T</h1>
-                                <p>$<span>14.50</span></p>
-                                <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                        </div>
-                </div>
-                <div class="item">
-                        <img src="img/vintageCoat.png"/>
-                        <div class="itemInfo">
-                                <h1>Vintage Coat</h1>
-                                <p>$<span>45.00</span></p>
-                                <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                        </div>
-                </div>
-                <div class="item">
-                        <img src="img/thriftedShirt.png"/>
-                        <div class="itemInfo">
-                                <h1>Thrifted Levi Shirt</h1>
-                                <p>$<span>25.00</span></p>
-                                <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                        </div>
-                </div>
-        </div>
-</div>
-<div class="cartBox">
-        <div class="cart">
-                <i class="fa-solid fa-xmark"></i>
-                <h1>Cart</h1>
-                <table></table>
-        </div>
-</div>
 <!-- hero section -->
 <header class="hero-section">
     <div class="content">
@@ -85,7 +27,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/nikeSw.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Nike</h2>
@@ -99,7 +41,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/nikeSwWhite.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Nike</h2>
@@ -113,7 +55,7 @@
         <div class="product-image">
             <span class="discount-tag">30% off</span>
             <img src="img/adidasgrey.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Adidas</h2>
@@ -127,7 +69,7 @@
         <div class="product-image">
             <span class="discount-tag">30% off</span>
             <img src="img/adidasblack.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Adidas</h2>
@@ -141,7 +83,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/basicbrown.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Tshirtz</h2>
@@ -155,7 +97,7 @@
         <div class="product-image">
             <span class="discount-tag">40% off</span>
             <img src="img/ripjeans.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Pantz</h2>
@@ -169,7 +111,7 @@
         <div class="product-image">
             <span class="discount-tag">40% off</span>
             <img src="img/regjeans.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Pantz</h2>
@@ -183,7 +125,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/shorts.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Shortz</h2>
@@ -224,7 +166,7 @@
         <div class="product-image">
             <span class="discount-tag">10% off</span>
             <img src="img/iPhone14.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">APPLE</h2>
@@ -238,7 +180,7 @@
         <div class="product-image">
             <span class="discount-tag">20% off</span>
             <img src="img/Samsung22.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Samsung</h2>
@@ -252,7 +194,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/phone3.jpg" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Google</h2>
@@ -266,7 +208,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/Xiaomi.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Xiaomi</h2>
@@ -280,7 +222,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/phone5.jpg" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Samsung</h2>
@@ -294,7 +236,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/Samsungtv.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Samsung</h2>
@@ -308,7 +250,7 @@
         <div class="product-image">
             <span class="discount-tag">20% off</span>
             <img src="img/lgtv.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">LG</h2>
@@ -322,7 +264,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/localtv.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">TVz</h2>
@@ -336,7 +278,7 @@
         <div class="product-image">
             <span class="discount-tag">30% off</span>
             <img src="img/tcl.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">TCL</h2>
@@ -350,7 +292,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/sony.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Sony</h2>
@@ -389,7 +331,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/golf1.jpg" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Puntz</h2>
@@ -403,7 +345,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/golf2.jpg" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Puntz</h2>
@@ -417,7 +359,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/basketball.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Sport Equipz</h2>
@@ -431,7 +373,7 @@
         <div class="product-image">
             <span class="discount-tag">20% off</span>
             <img src="img/baseball.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Sport Equipz</h2>
@@ -445,7 +387,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/football.png" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Nike</h2>
@@ -473,7 +415,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/fish2.jpg" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Rodz</h2>
@@ -487,7 +429,7 @@
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/fish3.jpg" class="product-thumb" alt="">
-            <button class="card-btn">add to whislist</button>
+            <button class="card-btn">Add To Cart</button>
         </div>
         <div class="product-info">
             <h2 class="product-brand">Rodz</h2>
@@ -552,6 +494,7 @@
 
 <script src="js/home.js"></script>
 
-  </body>
-  <script src="js/index.js"></script>
+<script src="js/index.js"></script>
+
+</body>
 </html>
