@@ -21,7 +21,7 @@
 }
 
 .brand-logo{
-    height: 60px;
+    height: 100px;
 }
 
 .nav-items{
@@ -67,7 +67,7 @@
 }
 
 .nav-items a{
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-items a img{
