@@ -4,12 +4,69 @@
     <meta charset="utf-8">
     <title>E-Commernce Website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/bfd0c0e402.js" crossorigin="anonymous"></script>
+    <script>
+		
+		function Delete(e){
+			let items = [];
+			JSON.parse(localStorage.getItem('items')).map(data=>{
+				if(data.id != e.parentElement.parentElement.children[0].textContent){
+					
+					items.push(data);
+
+				}
+			});
+			localStorage.setItem('items',JSON.stringify(items));
+			window.location.reload();
+		};
+	</script>
   </head>
   <body>
     
 <nav class="navbar"></nav>
 
+<div class="main">
+        <header id="header" class="header">
+                <div class="iconShopping">
+                        <p>0</p>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+        </header>
+        <div class="itemsBox">
+                <div class="item">
+                        <img src="img/OutkastVintage.png"/>
+                        <div class="itemInfo">
+                                <h1>Outkast Graphic T</h1>
+                                <p>$<span>14.50</span></p>
+                                <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        </div>
+                </div>
+                <div class="item">
+                        <img src="img/vintageCoat.png"/>
+                        <div class="itemInfo">
+                                <h1>Vintage Coat</h1>
+                                <p>$<span>45.00</span></p>
+                                <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        </div>
+                </div>
+                <div class="item">
+                        <img src="img/thriftedShirt.png"/>
+                        <div class="itemInfo">
+                                <h1>Thrifted Levi Shirt</h1>
+                                <p>$<span>25.00</span></p>
+                                <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        </div>
+                </div>
+        </div>
+</div>
+<div class="cartBox">
+        <div class="cart">
+                <i class="fa-solid fa-xmark"></i>
+                <h1>Cart</h1>
+                <table></table>
+        </div>
+</div>
 <!-- hero section -->
 <header class="hero-section">
     <div class="content">
@@ -541,4 +598,5 @@
 <script src="js/home.js"></script>
 
   </body>
+  <script src="js/index.js"></script>
 </html>
